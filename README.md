@@ -12,10 +12,10 @@ Install-Module dbadisa -Scope CurrentUser
 ## Examples - Install-DbsAudit
 
 ```powershell
-# Detect version and create appropriate audit from DISA, output to DATA\Stig\, shutdown on failulre
+# Detect version and create appropriate audit from DISA, output to DATA\Stig\, shutdown on failure
 Install-DbsAudit -SqlInstance sql2017, sql2016, sql2012
 
-# Detect version and create appropriate audit from DISA, output to C:\temp, continue on failulre
+# Detect version and create appropriate audit from DISA, output to C:\temp, continue on failure
 Install-DbsAudit -SqlInstance sql2017 -Path C:\temp -OnFaiure Continue
 ```
 
